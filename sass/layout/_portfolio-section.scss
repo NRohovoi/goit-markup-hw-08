@@ -7,9 +7,10 @@
 .list-portfolio__item {
     background-color: var(--white-color);
     display: block;
+    width: 100%;
     border-radius: 4px;
     @include tablet {
-    flex: calc((100% / 2) - 1rem);
+    flex: calc((100% / 2) - 1rem\2);
     width: 354px;
     }
 

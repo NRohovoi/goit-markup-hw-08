@@ -994,11 +994,12 @@ svg {
 .list-portfolio__item {
   background-color: var(--white-color);
   display: block;
+  width: 100%;
   border-radius: 4px;
 }
 @media screen and (min-width: 768px) {
   .list-portfolio__item {
-    flex: calc(50% - 1rem);
+    flex: calc(50% - 1rem\2 );
     width: 354px;
   }
 }
