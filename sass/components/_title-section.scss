@@ -1,0 +1,15 @@
+.title-section {
+    margin-bottom: 30px;
+
+    color: var(--link-text-color);
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    @include desctop {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+    }
+}

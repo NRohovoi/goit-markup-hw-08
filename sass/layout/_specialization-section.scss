@@ -1,0 +1,36 @@
+.section--specialization {
+    padding-top: 0;
+    
+    @media screen and (max-width: 1199px) {
+            display: none;
+        }
+}
+
+.list-specialization {
+    display: flex;
+}
+
+.list-specialization__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.list-specialization__thumb {
+    position: relative;
+}
+
+.list-specialization__thumb-paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+}

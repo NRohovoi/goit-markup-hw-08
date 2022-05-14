@@ -1,0 +1,34 @@
+.logo,
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.title,
+.paragraph {
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
+    display: block;
+}

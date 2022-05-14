@@ -1,0 +1,108 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.navigate {
+    display: flex;
+    align-items: center;
+}
+
+.container--head {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.list-navigate__item:not(last-child) {
+    margin-right: 50px;
+}
+
+.list-navigate__link {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--link-text-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: var(--accent-colot);
+        }
+}
+
+.link--current {
+    color: var(--accent-colot);
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 48px;
+            height: 4px;
+        
+            background: #2196f3;
+            border-radius: 2px;
+        }
+        &-portfolio::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 78px;
+            height: 4px;
+        
+            background: #2196f3;
+            border-radius: 2px;
+        }
+}
+
+.list-contact {
+    margin-left: auto;
+        &__item:not(:last-child) {
+            margin-right: 50px;
+        }
+}
+
+.list-contact__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--contact-link-text-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-colot);
+        }
+}
+
+.list-contact__icon {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+}
+
+.list-contact__icon-tel {
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+}
+
+

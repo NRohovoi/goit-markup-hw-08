@@ -1,0 +1,22 @@
+@import "./utils/_variables.scss";
+@import "./utils/mixin.scss";
+@import "./base/_common.scss";
+@import "./base/_reset.scss";
+
+@import "./components/_section.scss";
+@import "./components/_container.scss";
+@import "./components/_logo.scss";
+@import "./components/title-section";
+@import "./utils/_not-desplayed.scss";
+@import "./components/_modal.scss";
+
+@import "./layout/_header.scss";
+@import "./layout/_footer.scss";
+@import "./layout/_hero-section.scss";
+@import "./layout/_dignity-section.scss";
+@import "./layout/_specialization-section.scss";
+@import "./layout/_worker-section.scss";
+@import "./layout/_clients-section.scss";
+
+@import "./layout/_btn-portfolio.scss";
+@import "./layout/_portfolio-section.scss";
