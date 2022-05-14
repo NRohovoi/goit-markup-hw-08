@@ -999,11 +999,13 @@ svg {
 @media screen and (min-width: 768px) {
   .list-portfolio__item {
     flex: calc(50% - 1rem);
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .list-portfolio__item {
     flex: none;
+    width: 370px;
   }
 }
 

@@ -10,10 +10,12 @@
     border-radius: 4px;
     @include tablet {
     flex: calc((100% / 2) - 1rem);
+    width: 354px;
     }
 
     @include desctop {
-    flex: none
+    flex: none;
+    width: 370px;
     }
 }
 
