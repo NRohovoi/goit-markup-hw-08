@@ -78,6 +78,7 @@ margin-bottom: -30px;
 }
 
 .list-worker-soc__link {
+    display: flex;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -87,12 +88,12 @@ margin-bottom: -30px;
     transition-property: color, backgraund-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        
-        &:hover,
-        &:focus {
-            background-color: var(--accent-colot);
-            color: var(--white-color);
-        }
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-colot);
+        color: var(--white-color);
+    }
 }
 
 .list-worker-soc__icon {

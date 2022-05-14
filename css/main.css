@@ -878,6 +878,7 @@ svg {
 }
 
 .list-worker-soc__link {
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
