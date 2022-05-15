@@ -244,7 +244,13 @@
             <ul class="list list-specialization">
                 <li class="list-specialization__item">
                 <div class="list-specialization__thumb">
-                    <img src="./images/img1box.jpg" alt="разробатываем код" width="370" height="294">
+                    <picture>
+                        <source srcset="
+                            ./images/specialization/box-1.jpg 1x,
+                            ./images/specialization/box-1-2x.jpg 2x
+                            " media="(min-width: 1200px)" />
+                        <img src="./images/specialization/box-1.jpg" alt="разробатываем код">
+                    </picture>
                     <div class="list-specialization__thumb-paragraph">
                         <p class="paragraph">Десктопные приложения</p>
                     </div>
@@ -252,7 +258,13 @@
                 </li>
                 <li class="list-specialization__item">
                     <div class="list-specialization__thumb">
-                        <img src="./images/img2box.jpg" alt="адаптируем лоя разных устройств" width="370" height="294">
+                        <picture>
+                            <source srcset="
+                                ./images/specialization/box-2.jpg 1x,
+                                ./images/specialization/box-2-2x.jpg 2x
+                                " media="(min-width: 1200px)" />
+                            <img src="./images/specialization/box-2.jpg" alt="адаптируем лоя разных устройств">
+                        </picture>
                         <div class="list-specialization__thumb-paragraph">
                             <p class="paragraph">Мобильные приложения</p>
                     </div>
@@ -260,7 +272,12 @@
                 </li>
                 <li class="list-specialization__item">
                     <div class="list-specialization__thumb">
-                        <img src="./images/img3box.jpg" alt="стилизируем" width="370" height="294">
+                        <source srcset="
+                            ./images/specialization/box-3.jpg 1x,
+                            ./images/specialization/box-3-2x.jpg 2x
+                            " media="(min-width: 1200px)" />
+                        <img src="./images/specialization/box-3.jpg" alt="стилизируем">
+                        </picture>
                         <div class="list-specialization__thumb-paragraph">
                             <p class="paragraph">Дизайнерские решения</p>
                     </div>
@@ -277,7 +294,21 @@
             <h2 class="title title-section">Наша команда</h2>
             <ul class="list list-worker">
                 <li class="list-worker__item">
-                    <img class="list-worker__photo" src="./images/photo1.jpg" alt="фото Игорь Демьяненко"  width="270" height="260">
+                    <picture>
+                        <source srcset="
+                            ./images/worker/worker-1-desc.jpg 1x,
+                            ./images/worker/worker-1-desc-2x.jpg 2x
+                            " media="(min-width: 1200px)" />
+                        <source srcset="
+                            ./images/worker/worker-1-tab.jpg 1x,
+                            ./images/worker/worker-1-tab-2x.jpg 2x
+                            " media="(min-width: 768px)" />
+                        <source srcset="
+                            ./images/worker/worker-1-mob.jpg 1x,
+                            ./images/worker/worker-1-mob-2x.jpg 2x
+                            " media="(min-width: 320px)" />
+                        <img src="./images/worker/worker-1-mob.jpg" alt="фото Игорь Демьяненко" />
+                    </picture>
                     <div class="list-worker__box">
                         <h3 class="title list-worker__name">Игорь Демьяненко</h3>
                         <p class="paragraph  list-worker__speciality"> Product Designer</p>
@@ -306,10 +337,24 @@
                     </div>
                 </li>
                 <li class="list-worker__item">
-                    <img class="list-worker__photo" src="./images/photo2.jpg" alt="фото Ольга Репина"  width="270" height="260">
+                    <picture>
+                        <source srcset="
+                            ./images/worker/worker-2-desc.jpg 1x,
+                            ./images/worker/worker-2-desc-2x.jpg 2x
+                            " media="(min-width: 1200px)" />
+                        <source srcset="
+                            ./images/worker/worker-2-tab.jpg 1x,
+                            ./images/worker/worker-2-tab-2x.jpg 2x
+                            " media="(min-width: 768px)" />
+                        <source srcset="
+                            ./images/worker/worker-2-mob.jpg 1x,
+                            ./images/worker/worker-2-mob-2x.jpg 2x
+                            " media="(min-width: 320px)" />
+                        <img src="./images/worker/worker-2-mob.jpg" alt="фото Ольга Репина" />
+                    </picture>
                     <div class="list-worker__box">
-                        <h3 class="title list-worker__name">Игорь Демьяненко</h3>
-                        <p class="paragraph  list-worker__speciality"> Product Designer</p>
+                        <h3 class="title list-worker__name">Ольга Репина</h3>
+                        <p class="paragraph  list-worker__speciality"> Frontend Developer</p>
                         <ul class="list list-worker-soc">
                             <li class="list-worker-soc__item"><a class="list-worker-soc__link" aria-label="Ссылка на Instagrem"
                                     href="socialnw-link">
@@ -339,10 +384,24 @@
                     </div>
                 </li>
                 <li class="list-worker__item">
-                    <img class="list-worker__photo" src="./images/photo3.jpg" alt="фото Николай Тарасовv"  width="270" height="260">
+                        <picture>
+                            <source srcset="
+                                ./images/worker/worker-3-desc.jpg 1x,
+                                ./images/worker/worker-3-desc-2x.jpg 2x
+                                " media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./images/worker/worker-3-tab.jpg 1x,
+                                ./images/worker/worker-3-tab-2x.jpg 2x
+                                " media="(min-width: 768px)" />
+                            <source srcset="
+                                ./images/worker/worker-3-mob.jpg 1x,
+                                ./images/worker/worker-3-mob-2x.jpg 2x
+                                " media="(min-width: 320px)" />
+                            <img src="./images/worker/worker-3-mob.jpg" alt="фото Николай Тарасов" />
+                        </picture>
                     <div class="list-worker__box">
-                        <h3 class="title list-worker__name">Игорь Демьяненко</h3>
-                        <p class="paragraph  list-worker__speciality"> Product Designer</p>
+                        <h3 class="title list-worker__name">Николай Тарасов</h3>
+                        <p class="paragraph  list-worker__speciality"> Marketing</p>
                         <ul class="list list-worker-soc">
                             <li class="list-worker-soc__item"><a class="list-worker-soc__link" aria-label="Ссылка на Instagrem"
                                     href="socialnw-link">
@@ -372,10 +431,24 @@
                     </div>
                 </li>
                 <li class="list-worker__item">
-                    <img class="list-worker__photo" src="./images/photo4.jpg" alt="фото Михаил Ермаков"  width="270" height="260">
+                    <picture>
+                        <source srcset="
+                            ./images/worker/worker-4-desc.jpg 1x,
+                            ./images/worker/worker-4-desc-2x.jpg 2x
+                            " media="(min-width: 1200px)" />
+                        <source srcset="
+                            ./images/worker/worker-4-tab.jpg 1x,
+                            ./images/worker/worker-4-tab-2x.jpg 2x
+                            " media="(min-width: 768px)" />
+                        <source srcset="
+                            ./images/worker/worker-4-mob.jpg 1x,
+                            ./images/worker/worker-4-mob-2x.jpg 2x
+                            " media="(min-width: 320px)" />
+                        <img src="./images/worker/worker-4-mob.jpg" alt="фото Михаил Ермаков" />
+                    </picture>
                     <div class="list-worker__box">
-                        <h3 class="title list-worker__name">Игорь Демьяненко</h3>
-                        <p class="paragraph  list-worker__speciality"> Product Designer</p>
+                        <h3 class="title list-worker__name">Михаил Ермаков</h3>
+                        <p class="paragraph  list-worker__speciality"> UI Designer</p>
                         <ul class="list list-worker-soc">
                             <li class="list-worker-soc__item"><a class="list-worker-soc__link" aria-label="Ссылка на Instagrem"
                                     href="socialnw-link">
