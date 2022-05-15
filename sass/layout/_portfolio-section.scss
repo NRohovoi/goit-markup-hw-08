@@ -64,7 +64,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 63px 24px;
+    padding: 40px 24px;
 
     font-style: normal;
     font-weight: normal;
@@ -80,6 +80,16 @@
         .list-portfolio__link:focus & {
             opacity: 1;
             transform: translateY(0%);
+        }
+        @include mobile {
+            padding: 77px 24px;
+        }
+        @include tablet {
+            padding: 49px 24px;
+        }
+
+        @include desctop {
+            padding: 63px 24px;
         }
 }
 

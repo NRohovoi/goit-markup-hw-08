@@ -5,26 +5,51 @@
   margin-right: auto;
   margin-left: auto;
 
+  background-color: var(--second-bgc);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero/bg-font-mob.jpg');
+  
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero/bg-font-mob-2x.jpg');
+    }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   text-align: center;
 
-    @media screen and (min-width: 480px) {
-
+  padding-top: 118px;
+  padding-bottom: 118px;
+  @include tablet {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero/bg-font-tab.jpg');
+    
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url('../images/hero/bg-font-tab-2x.jpg');
+      }
     }
 
-    @media screen and (min-width: 768px) {
+  @include desctop {
+    padding-top: 200px;
+    padding-bottom: 200px;
 
-    }
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero/bg-font-desc.jpg');
 
-    @media screen and (min-width: 1200px) {
-      background-color: var(--second-bgc);
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/bgfont.jpg');
-      background-repeat: no-repeat;
-      background-position: center;
-      
-      padding-top: 200px;
-      padding-bottom: 200px;
-    }
+        url('../images/hero/bg-font-desc-2x.jpg');
+      }
+  }
+
 }
 
 .hero-title {
@@ -33,11 +58,20 @@
   color: var(--white-color);
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 20px;
+  line-height: 1.6;
+
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  @include mobile {
+  font-size: 26px;
+  line-height: 1.6;
+  }
+  @include desctop  {
+  font-size: 44px;
+  line-height: 1.36;
+  }
 }
 
 .hero-button {

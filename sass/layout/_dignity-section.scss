@@ -24,15 +24,14 @@
     .list-dignity>& {
     flex-basis: calc(100% / 2 - 30px);
     }
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
     }
     @include desctop {
     .list-dignity>& {
             flex-basis: calc(100% / 4 - 30px);
         }
-    &:not(:last-child) {
-    margin-right: 30px;
-    }        
-
     }
 
 }
