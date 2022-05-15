@@ -2,18 +2,38 @@
     border-bottom: 1px solid #ececec;
 }
 
+.container--head {
+    position: relative;
+    align-items: center;
+    display: none;
+
+    @include tablet {
+        display: flex;
+    }
+}
+
+.logo--head {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 88px;
+    @include desctop {
+    margin-right: 93px;
+    }
+}
+
 .navigate {
     display: flex;
     align-items: center;
 }
 
-.container--head {
-    display: flex;
-    position: relative;
-    align-items: center;
+.list-navigate {
+    @include tablet {
+        display: flex;
+        margin-right: 84px;
+    }
 }
 
-.list-navigate__item:not(last-child) {
+.list-navigate__item:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -63,20 +83,34 @@
 
 .list-contact {
     margin-left: auto;
-        &__item:not(:last-child) {
-            margin-right: 50px;
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.list-contact__item {
+
+    @include tablet {
+        &:not(:last-child) {
+            margin-bottom: 10px;
         }
+    }
+    @include desctop {
+        &:not(:last-child) {
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
+    }
 }
 
 .list-contact__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
 
     color: var(--contact-link-text-color);
@@ -88,6 +122,12 @@
         &:hover,
         &:focus {
             color: var(--accent-colot);
+        }
+        @include desctop {
+            font-size: 14px;
+            line-height: 1.14;
+            padding-top: 24px;
+            padding-bottom: 24px;
         }
 }
 
