@@ -3,35 +3,24 @@
 // }
 
 .list-dignity {
-
-    margin-bottom: -30px;
-    @include tablet {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: center;
-    margin-right: -30px;
-    }
+    gap: 30px;
 }
 
 
 
 .list-dignity__item {
-    margin-bottom: 30px;
+   
     
     @include tablet {
-    margin-right: 30px;
-    .list-dignity>& {
-    flex-basis: calc(100% / 2 - 30px);
-    }
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
+        width: 354px;
+ 
     }
     @include desctop {
-    .list-dignity>& {
-            flex-basis: calc(100% / 4 - 30px);
-        }
+        width: 270px;
     }
 
 }

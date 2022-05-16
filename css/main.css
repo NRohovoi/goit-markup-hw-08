@@ -617,10 +617,16 @@ body.modal-open {
 .mob-tel {
   margin-bottom: 32px;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 27px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--accent-colot);
+}
+@media screen and (min-width: 480px) {
+  .mob-tel {
+    font-size: 34px;
+    line-height: 1.17;
+  }
 }
 
 .mob-email {
@@ -638,13 +644,13 @@ body.modal-open {
 .list--soc {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
   align-items: center;
+  margin-bottom: -20px;
 }
 @media screen and (min-width: 480px) {
   .list--soc {
-    gap: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -653,16 +659,20 @@ body.modal-open {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+  margin-bottom: 20px;
   color: var(--accent-colot);
 }
+.mob-contact__item--soc:not(:last-child)::after {
+  content: "";
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
 @media screen and (min-width: 480px) {
-  .mob-contact__item--soc:not(:last-child)::after {
-    content: "";
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 22px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
+  .mob-contact__item--soc {
+    margin-bottom: 0;
   }
 }
 
@@ -966,35 +976,21 @@ body.modal-open {
 }
 
 .list-dignity {
-  margin-bottom: -30px;
-}
-@media screen and (min-width: 768px) {
-  .list-dignity {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: center;
-    margin-right: -30px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 30px;
 }
 
-.list-dignity__item {
-  margin-bottom: 30px;
-}
 @media screen and (min-width: 768px) {
   .list-dignity__item {
-    margin-right: 30px;
-  }
-  .list-dignity > .list-dignity__item {
-    flex-basis: calc(50% - 30px);
-  }
-  .list-dignity__item:not(:last-child) {
-    margin-right: 30px;
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .list-dignity > .list-dignity__item {
-    flex-basis: calc(25% - 30px);
+  .list-dignity__item {
+    width: 270px;
   }
 }
 
